@@ -1,16 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
-using Proyecto_HGC_SIGEM_G6.Data;
 using Proyecto_HGC_SIGEM_G6.Models;
 
 namespace Proyecto_HGC_SIGEM_G6.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly DBContext _context;
 
-        public LoginController(ApplicationDbContext context)
+        public LoginController(DBContext context)
         {
             _context = context;
         }
@@ -21,10 +20,10 @@ namespace Proyecto_HGC_SIGEM_G6.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string correo, string contrasena)
         {
-            var usuario = await _context.Usuarios
-                .FirstOrDefaultAsync(u => u.Correo == correo && u.Contrasena == contrasena);
+            var usuario = await _context.Usuario
+                .FirstOrDefaultAsync(u => u.Correo == correo && u.ContraseñaHash == contrasena);
 
-            if (usuario != null)
+            if (usuario != null && usuario.Activo)
             {
                 HttpContext.Session.SetString("Usuario", usuario.Nombre);
                 HttpContext.Session.SetString("Rol", usuario.Rol);
@@ -43,8 +42,11 @@ namespace Proyecto_HGC_SIGEM_G6.Controllers
         {
             if (ModelState.IsValid)
             {
-                usuario.Rol = "Usuario"; // los registrados desde aquí siempre serán usuarios normales
-                _context.Usuarios.Add(usuario);
+                usuario.Rol = "Usuario";
+                usuario.FechaRegistro = DateTime.Now;
+                usuario.Activo = true;
+
+                _context.Usuario.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
