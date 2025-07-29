@@ -1,0 +1,15 @@
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\bin\Debug\net8.0\ModelHelpes.deps.json
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\bin\Debug\net8.0\ModelHelpes.runtimeconfig.json
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\bin\Debug\net8.0\ModelHelpes.dll
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\bin\Debug\net8.0\ModelHelpes.pdb
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.csproj.AssemblyReference.cache
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.AssemblyInfoInputs.cache
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.AssemblyInfo.cs
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.csproj.CoreCompileInputs.cache
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.sourcelink.json
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.dll
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\refint\ModelHelpes.dll
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.pdb
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ModelHelpes.genruntimeconfig.cache
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\ModelHelpes\obj\Debug\net8.0\ref\ModelHelpes.dll

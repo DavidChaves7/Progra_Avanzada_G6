@@ -1,9 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+using Proyecto_HGC_SIGEM_G6.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession();
+
+builder.Services.AddHttpClient<ClimaService>();
+
+builder.Services.AddHttpClient<DivisaService>();
+
+
+builder.Services.AddDbContext<DbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 var app = builder.Build();
 

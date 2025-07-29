@@ -1,0 +1,45 @@
+﻿@model Proyecto_HGC_SIGEM_G6.Models.APIsViewModel
+
+<h2>Panel de APIs Externas</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow p-3 mb-4">
+            <h4>Clima en Alajuela</h4>
+            @if (Model.Clima != null)
+            {
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Temperatura:</strong> @Model.Clima.Main.Temp °C</li>
+                    <li class="list-group-item"><strong>Humedad:</strong> @Model.Clima.Main.Humidity %</li>
+                    <li class="list-group-item"><strong>Condición:</strong> @Model.Clima.Weather[0].Description</li>
+                </ul>
+            }
+            else
+            {
+                <p class="text-danger">No se pudo cargar la información del clima.</p>
+            }
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow p-3 mb-4">
+            <h4>Tipo de cambio (USD, EUR, CRC)</h4>
+            @if (Model.Divisa?.Conversion_rates != null)
+            {
+                var divisasClave = new[] { "USD", "EUR", "CRC" };
+
+            <ul class="list-group">
+                @foreach (var clave in divisasClave)
+                {
+                    if (Model.Divisa.Conversion_rates.TryGetValue(clave, out var valor))
+                    {
+                        <li class="list-group-item">
+                            <strong>@clave:</strong> @valor
+                        </li>
+                    }
+                }
+            </ul>
+                        }
+        </div>
+    </div>
+</div>
