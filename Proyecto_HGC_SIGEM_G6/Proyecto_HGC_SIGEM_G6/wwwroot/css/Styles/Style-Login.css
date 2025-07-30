@@ -1,0 +1,55 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--color-principal);
+}
+
+.btn-primary {
+    background-color: var(--color-secundario);
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #c51e1b;
+    }
+
+.btn-success {
+    background-color: var(--color-terciario);
+    border: none;
+    color: var(--color-principal);
+}
+
+    .btn-success:hover {
+        background-color: #e0a821;
+    }
+
+.btn-outline-secondary {
+    border-color: var(--color-principal);
+    color: var(--color-principal);
+}
+
+    .btn-outline-secondary:hover {
+        background-color: var(--color-principal);
+        color: #fff;
+    }
+
+.alert {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}

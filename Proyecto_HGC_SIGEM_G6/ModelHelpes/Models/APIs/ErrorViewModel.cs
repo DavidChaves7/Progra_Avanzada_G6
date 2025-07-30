@@ -1,4 +1,4 @@
-﻿namespace Proyecto_HGC_SIGEM_G6.Models
+﻿namespace ModelHelper.Models
 {
     public class ErrorViewModel
     {

@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Proyecto_HGC_SIGEM_G6.Models;
+using ModelHelper.Models;
 
 namespace Proyecto_HGC_SIGEM_G6.Controllers
 {
@@ -18,15 +18,5 @@ namespace Proyecto_HGC_SIGEM_G6.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Proyecto_HGC_SIGEM_G6.Context;
 using Proyecto_HGC_SIGEM_G6.Services;
+using Proyecto_HGC_SIGEM_G6.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,12 +10,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession();
 
-builder.Services.AddHttpClient<ClimaService>();
+builder.Services.AddHttpClient<IApisExternosService, ApisExternosService>();
+builder.Services.AddHttpClient<IRestService,RestService>();
 
-builder.Services.AddHttpClient<DivisaService>();
 
-
-builder.Services.AddDbContext<DbContext>(options =>
+builder.Services.AddDbContext<DBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
@@ -38,6 +39,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

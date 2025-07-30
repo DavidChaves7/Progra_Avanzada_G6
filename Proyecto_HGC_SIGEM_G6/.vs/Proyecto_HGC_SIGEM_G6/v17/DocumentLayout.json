@@ -1,74 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\",
+  "WorkspaceRootPath": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\views\\apis\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\dchav\\onedrive\\documents\\github\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\dchav\\onedrive\\documents\\github\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\dchav\\onedrive\\documents\\github\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\views\\apis\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\views\\apis\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\models\\divisadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\models\\divisadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\dchav\\onedrive\\documents\\github\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\services\\apisexternosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\services\\apisexternosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\services\\divisaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\services\\divisaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\controllers\\apiscontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\dchav\\onedrive\\documents\\github\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\controllers\\apiscontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\controllers\\apiscontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\services\\climaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\services\\climaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\models\\climadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\models\\climadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\models\\apisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\models\\apisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\views\\login\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\views\\login\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1394C6D-83CE-46A5-AA60-53B34FD34D52}|ModelHelpes\\ModelHelpes.csproj|c:\\users\\kenneth\\documents\\juan\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\modelhelpes\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1394C6D-83CE-46A5-AA60-53B34FD34D52}|ModelHelpes\\ModelHelpes.csproj|solutionrelative:modelhelpes\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|c:\\users\\dchav\\onedrive\\documents\\github\\progra_avanzada_g6\\proyecto_hgc_sigem_g6\\proyecto_hgc_sigem_g6\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{436B6CDD-0CF6-4668-99B5-EA7D4BB7108A}|Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj|solutionrelative:proyecto_hgc_sigem_g6\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -80,10 +36,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 31,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
@@ -189,224 +141,85 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DivisaDto.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\DivisaDto.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Models\\DivisaDto.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\DivisaDto.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Models\\DivisaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T00:01:08.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClimaDto.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\ClimaDto.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Models\\ClimaDto.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\ClimaDto.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Models\\ClimaDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T00:00:24.156Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "APIsControllercs.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwBkAAAAeAAAAAAAAAA==",
+              "Title": "ApisExternosService.cs",
+              "DocumentMoniker": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Services\\ApisExternosService.cs",
+              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Services\\ApisExternosService.cs",
+              "ToolTip": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Services\\ApisExternosService.cs",
+              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Services\\ApisExternosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T23:55:28.038Z",
+              "WhenOpened": "2025-07-30T03:05:20.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "APIsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\APIsViewModel.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Models\\APIsViewModel.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\APIsViewModel.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Models\\APIsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T23:50:37.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-28T22:44:00.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\appsettings.json",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\appsettings.json",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\appsettings.json",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-28T22:44:44.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Program.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Program.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Program.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T22:44:45.279Z",
+              "WhenOpened": "2025-07-30T03:07:39.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DivisaService.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Services\\DivisaService.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Services\\DivisaService.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Services\\DivisaService.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Services\\DivisaService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T23:45:38.27Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
+              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Views\\APIs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T03:07:34.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-30T03:07:11.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T03:05:51.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ClimaService.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Services\\ClimaService.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Services\\ClimaService.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Services\\ClimaService.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Services\\ClimaService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "APIsControllercs.cs",
+              "DocumentMoniker": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
+              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
+              "ToolTip": "C:\\Users\\dchav\\OneDrive\\Documents\\GitHub\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
+              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Controllers\\APIsControllercs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T22:39:05.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Properties\\launchSettings.json",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-28T22:46:34.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\DbContext.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Models\\DbContext.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\DbContext.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Models\\DbContext.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA8wAkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T22:45:58.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\Usuario.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Models\\Usuario.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAxwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T22:46:57.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T22:48:03.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Registro.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Login\\Registro.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Views\\Login\\Registro.cshtml",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Login\\Registro.cshtml",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Views\\Login\\Registro.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-28T22:53:03.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-28T23:08:09.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Proyecto_HGC_SIGEM_G6\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Proyecto_HGC_SIGEM_G6\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T23:12:22.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\Class1.cs",
-              "RelativeDocumentMoniker": "ModelHelpes\\Class1.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\Class1.cs",
-              "RelativeToolTip": "ModelHelpes\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T14:19:43.014Z",
+              "WhenOpened": "2025-07-30T03:04:56.894Z",
               "EditorCaption": ""
             }
           ]
@@ -415,6 +228,10 @@
           "DockedWidth": 200,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
@@ -434,10 +251,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

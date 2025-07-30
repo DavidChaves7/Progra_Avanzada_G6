@@ -1,23 +1,18 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Proyecto_HGC_SIGEM_G6.Models
+namespace ModelHelper.Models
 {
+
+    [Table("Usuarios")]
     public class Usuario
     {
+        [Key]
         public int IdUsuario { get; set; }
-
-        [Required]
         public string Nombre { get; set; }
-
-        [Required, EmailAddress]
         public string Correo { get; set; }
-
-        [Required]
         public string ContraseñaHash { get; set; }
-
-        [Required]
         public string Rol { get; set; }
-
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
         public bool Activo { get; set; } = true;
     }
