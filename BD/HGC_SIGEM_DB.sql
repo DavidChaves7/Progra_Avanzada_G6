@@ -93,8 +93,25 @@ USE HGC_SIGEM;
 GO
 
 
-
+--Widgets
 INSERT INTO dbo.Widgets (Nombre, Tipo, UrlApi, FrecuenciaRefresco, Activo)
 VALUES
 (N'Clima Alajuela',          N'Chart', N'/api/ext/clima?city=Alajuela',                 60,  1),
 (N'Tipo de cambio USD/CRC',  N'Kpi',   N'/api/ext/divisas?base=USD&symbols=CRC',       300,  1);
+
+-- Productos
+INSERT INTO Productos (Nombre, Cantidad, Precio, Activo) VALUES
+('Sofá 3 puestos', 10, 350000.00, 1),
+('Mesa de comedor', 5, 420000.00, 1),
+('Silla ergonómica', 15, 85000.00, 1),
+('Escritorio gamer', 8, 199000.00, 1),
+('Biblioteca modular', 4, 275000.00, 1);
+
+-- Órdenes
+INSERT INTO Ordenes (IdUsuario, IdProducto, Cantidad, Total, Estado, Fecha) VALUES
+(1, 1, 1, 350000.00, 'Pendiente', GETDATE()),
+(1, 2, 1, 420000.00, 'Pendiente', GETDATE()),
+(1, 3, 2, 170000.00, 'Pendiente', GETDATE()),
+(1, 4, 1, 199000.00, 'Pendiente', GETDATE()),
+(1, 5, 1, 275000.00, 'Pendiente', GETDATE());
+

@@ -1602,7 +1602,7 @@
           }
         }
       },
-      "ModelHelpes/1.0.0": {
+      "ModelHelpers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1610,10 +1610,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
         },
         "compile": {
-          "bin/placeholder/ModelHelpes.dll": {}
+          "bin/placeholder/ModelHelpers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ModelHelpes.dll": {}
+          "bin/placeholder/ModelHelpers.dll": {}
         }
       }
     }
@@ -4727,10 +4727,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ModelHelpes/1.0.0": {
+    "ModelHelpers/1.0.0": {
       "type": "project",
-      "path": "../ModelHelpes/ModelHelpes.csproj",
-      "msbuildProject": "../ModelHelpes/ModelHelpes.csproj"
+      "path": "../ModelHelpes/ModelHelpers.csproj",
+      "msbuildProject": "../ModelHelpes/ModelHelpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4738,27 +4738,27 @@
       "Microsoft.EntityFrameworkCore >= 9.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
-      "ModelHelpes >= 1.0.0"
+      "ModelHelpers >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomas\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Kenneth\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj",
+      "projectUniqueName": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj",
       "projectName": "Proyecto_HGC_SIGEM_G6",
-      "projectPath": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj",
-      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\obj\\",
+      "projectPath": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6.csproj",
+      "packagesPath": "C:\\Users\\Kenneth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\Proyecto_HGC_SIGEM_G6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kenneth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4767,14 +4767,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpes.csproj": {
-              "projectPath": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpes.csproj"
+            "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpers.csproj": {
+              "projectPath": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpers.csproj"
             }
           }
         }
@@ -4829,7 +4830,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

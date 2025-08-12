@@ -4722,23 +4722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomas\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Kenneth\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpes.csproj",
-      "projectName": "ModelHelpes",
-      "projectPath": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpes.csproj",
-      "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\Github\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\obj\\",
+      "projectUniqueName": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpers.csproj",
+      "projectName": "ModelHelpers",
+      "projectPath": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\ModelHelpers.csproj",
+      "packagesPath": "C:\\Users\\Kenneth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kenneth\\Documents\\Juan\\Progra_Avanzada_G6\\Proyecto_HGC_SIGEM_G6\\ModelHelpes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kenneth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4747,6 +4747,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4802,7 +4803,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
