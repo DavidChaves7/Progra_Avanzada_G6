@@ -1,1 +1,49 @@
-[]
+[
+  {
+    "ContainingType": "Proyecto_HGC_SIGEM_G6.Controllers.ExtController",
+    "Method": "GetClima",
+    "RelativePath": "api/ext/clima",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_HGC_SIGEM_G6.Controllers.ExtController",
+    "Method": "GetDivisas",
+    "RelativePath": "api/ext/divisas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "baseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "symbols",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_HGC_SIGEM_G6.Controllers.ExtController",
+    "Method": "OkPing",
+    "RelativePath": "api/ext/ok",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

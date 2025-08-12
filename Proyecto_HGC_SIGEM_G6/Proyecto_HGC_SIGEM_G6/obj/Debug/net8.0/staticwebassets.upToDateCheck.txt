@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\css\Styles\Style-Login.css
 wwwroot\favicon.ico
+wwwroot\images\hgc-logo.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
