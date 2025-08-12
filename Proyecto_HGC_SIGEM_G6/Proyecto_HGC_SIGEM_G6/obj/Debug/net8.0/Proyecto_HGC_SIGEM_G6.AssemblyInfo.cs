@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto_HGC_SIGEM_G6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b60d29faea9d90eec57fd70fbe294d2161cff4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34aa7e8e6b4dc347feda5d1c4ddc9d28aa104e20")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto_HGC_SIGEM_G6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto_HGC_SIGEM_G6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

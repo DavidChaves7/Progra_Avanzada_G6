@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ModelHelpers")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ModelHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34aa7e8e6b4dc347feda5d1c4ddc9d28aa104e20")]
-[assembly: System.Reflection.AssemblyProductAttribute("ModelHelpers")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ModelHelpers")]
+[assembly: System.Reflection.AssemblyProductAttribute("ModelHelper")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ModelHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
