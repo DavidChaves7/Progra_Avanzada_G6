@@ -19,11 +19,13 @@ namespace Proyecto_HGC_SIGEM_G6.Controllers
         {
             var clima = await _apisEService.ObtenerClimaAsync("Alajuela");
             var divisa = await _apisEService.ObtenerDivisasAsync();
+            var muebles = await _apisEService.ObtenerMueblesAsync(10);
 
             var viewModel = new APIsViewModel
             {
                 Clima = clima,
-                Divisa = divisa
+                Divisa = divisa,
+                Muebles = muebles
             };
 
             return View(viewModel);

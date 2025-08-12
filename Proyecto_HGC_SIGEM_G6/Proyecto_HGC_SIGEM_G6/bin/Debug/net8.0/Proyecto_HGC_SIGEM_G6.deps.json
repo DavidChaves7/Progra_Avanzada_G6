@@ -11,7 +11,7 @@
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.7",
-          "ModelHelpes": "1.0.0"
+          "ModelHelpers": "1.0.0"
         },
         "runtime": {
           "Proyecto_HGC_SIGEM_G6.dll": {}
@@ -1039,13 +1039,13 @@
           }
         }
       },
-      "ModelHelpes/1.0.0": {
+      "ModelHelpers/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7"
         },
         "runtime": {
-          "ModelHelpes.dll": {
+          "ModelHelpers.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1612,7 +1612,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "ModelHelpes/1.0.0": {
+    "ModelHelpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

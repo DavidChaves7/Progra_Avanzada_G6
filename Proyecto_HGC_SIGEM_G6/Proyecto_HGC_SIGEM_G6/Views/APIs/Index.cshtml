@@ -6,7 +6,7 @@
     <div class="col-md-6">
         <div class="card shadow p-3 mb-4">
             <h4>Clima en Alajuela</h4>
-            @if (Model.Clima != null)
+            @if (Model.Clima != null && Model.Clima.Main != null && Model.Clima.Weather?.Count > 0)
             {
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>Temperatura:</strong> @Model.Clima.Main.Temp °C</li>
@@ -16,7 +16,7 @@
             }
             else
             {
-                <p class="text-danger">No se pudo cargar la información del clima.</p>
+                <p class="text-danger mb-0">No se pudo cargar la información del clima.</p>
             }
         </div>
     </div>
@@ -27,19 +27,66 @@
             @if (Model.Divisa?.Conversion_rates != null)
             {
                 var divisasClave = new[] { "USD", "EUR", "CRC" };
-
-            <ul class="list-group">
-                @foreach (var clave in divisasClave)
-                {
-                    if (Model.Divisa.Conversion_rates.TryGetValue(clave, out var valor))
+                <ul class="list-group">
+                    @foreach (var clave in divisasClave)
                     {
-                        <li class="list-group-item">
-                            <strong>@clave:</strong> @valor
-                        </li>
-                    }
-                }
-            </ul>
+                        if (Model.Divisa.Conversion_rates.TryGetValue(clave, out var valor))
+                        {
+                            <li class="list-group-item">
+                                <strong>@clave:</strong> @valor
+                            </li>
                         }
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-danger mb-0">No se pudo cargar el tipo de cambio.</p>
+            }
         </div>
     </div>
 </div>
+
+@if (Model.Muebles != null && Model.Muebles.Any())
+{
+    var first = Model.Muebles.First();
+    <div class="card shadow p-3 mb-4">
+        <h4>Muebles (demo sin autenticación)</h4>
+        <div style="position:relative; display:inline-block; width:100%; max-width:780px;">
+            <img id="mueble-rotatorio" src="@first.ImageUrl"
+                 alt="Mueble" class="img-fluid rounded w-100"
+                 style="max-height:420px; object-fit:cover; opacity:1; transition:opacity .25s ease;">
+            <div id="mueble-titulo"
+                 class="px-3 py-2"
+                 style="position:absolute; left:0; right:0; bottom:0;
+                            background:rgba(0,0,0,.55); color:#fff; font-weight:600;">
+                @first.Title
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+          const items = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Muebles));
+          const img = document.getElementById('mueble-rotatorio');
+          const title = document.getElementById('mueble-titulo');
+          if (!items || items.length === 0) return;
+
+          let i = 0, intervaloMs = 8000;
+          setInterval(()=>{
+            i = (i + 1) % items.length;
+            img.style.opacity = 0;
+            setTimeout(()=>{
+              img.src = items[i].ImageUrl;
+              title.textContent = items[i].Title;
+              img.onload = ()=> img.style.opacity = 1;
+            }, 250);
+          }, intervaloMs);
+        })();
+    </script>
+}
+else
+{
+    <div class="card shadow p-3 mb-4"><em>No hay resultados de muebles.</em></div>
+}
+

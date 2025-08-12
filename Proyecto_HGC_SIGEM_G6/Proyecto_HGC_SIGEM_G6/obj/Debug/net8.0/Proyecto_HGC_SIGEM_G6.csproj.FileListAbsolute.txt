@@ -153,8 +153,6 @@ C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyect
 C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\ModelHelpes.dll
-C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\ModelHelpes.pdb
 C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -347,3 +345,6 @@ C:\Users\dchav\OneDrive\Documents\GitHub\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G
 C:\Users\dchav\OneDrive\Documents\GitHub\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\Proyecto_HGC_SIGEM_G6.genruntimeconfig.cache
 C:\Users\dchav\OneDrive\Documents\GitHub\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\ref\Proyecto_HGC_SIGEM_G6.dll
 C:\Users\dchav\OneDrive\Documents\GitHub\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutClean.cshtml.rz.scp.css
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutClean.cshtml.rz.scp.css
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\ModelHelpers.dll
+C:\Users\Kenneth\Documents\Juan\Progra_Avanzada_G6\Proyecto_HGC_SIGEM_G6\Proyecto_HGC_SIGEM_G6\bin\Debug\net8.0\ModelHelpers.pdb
