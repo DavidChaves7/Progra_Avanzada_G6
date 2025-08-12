@@ -11,12 +11,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
 
 builder.Services.AddHttpClient<IApisExternosService, ApisExternosService>();
-builder.Services.AddHttpClient<IRestService,RestService>();
 
 
-builder.Services.AddDbContext<DBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddDbContext<DBContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IRestService, RestService>();
 
 var app = builder.Build();
 
@@ -36,7 +36,7 @@ app.UseRouting();
 app.UseSession();
 
 app.UseAuthorization();
-
+app.MapControllers();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Login}/{action=Index}/{id?}");

@@ -1,45 +1,98 @@
-@model ModelHelper.Models.Usuario
-
+@model ModelHelpes.Models.Usuario
 @{
-    Layout = "_LayoutClean";
-    ViewData["Title"] = "Registro de usuario";
+    ViewData["Title"] = "Registro";
 }
 
-<link rel="stylesheet" href="~/css/Styles/Style-Login.css" />
+<style>
+    /* --- Solo para esta vista --- */
+    body {
+        background: radial-gradient(70% 140% at 50% -30%, #1c2b66 0%, #0f1327 45%, #0b0e1b 100%) !important;
+    }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-7">
-            <div class="card shadow-sm border-0 rounded-3">
-                <div class="card-body">
-                    <h3 class="text-center mb-4">Registro de nuevo usuario</h3>
+    .reg-card {
+        width: 440px;
+        border-radius: 16px;
+        background: #1b1f2a;
+        box-shadow: 0 16px 40px rgba(0,0,0,.55);
+    }
 
-                    <form asp-action="Registro" method="post">
-                        <div class="mb-3">
-                            <label asp-for="Nombre" class="form-label">Nombre</label>
-                            <input asp-for="Nombre" class="form-control" />
-                            <span asp-validation-for="Nombre" class="text-danger"></span>
-                        </div>
+    .reg-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #0f1322;
+        border: 1px solid #2b3140;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        letter-spacing: .5px;
+    }
 
-                        <div class="mb-3">
-                            <label asp-for="Correo" class="form-label">Correo electrónico</label>
-                            <input asp-for="Correo" class="form-control" type="email" />
-                            <span asp-validation-for="Correo" class="text-danger"></span>
-                        </div>
+    .reg-input {
+        background: #272c3a;
+        color: #e9ecef;
+        border: 1px solid #353c4c;
+    }
 
-                        <div class="mb-3">
-                            <label asp-for="ContraseñaHash" class="form-label">Contraseña</label>
-                            <input asp-for="ContraseñaHash" type="password" class="form-control" />
-                            <span asp-validation-for="ContraseñaHash" class="text-danger"></span>
-                        </div>
+        .reg-input::placeholder {
+            color: #c9cfdb;
+            opacity: .8;
+        }
 
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-success">Registrarse</button>
-                            <a href="/Login/Index" class="btn btn-outline-secondary">Volver al inicio de sesión</a>
-                        </div>
-                    </form>
-                </div>
+    .btn-hgc {
+        background: #d72425;
+        border: 0;
+    }
+
+        .btn-hgc:hover {
+            filter: brightness(.92);
+        }
+</style>
+
+<div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: calc(100vh - 120px);">
+    <div class="card text-light border-0 reg-card">
+        <div class="card-body p-4">
+
+            <div class="d-flex flex-column align-items-center mb-3">
+                <div class="reg-logo mb-2">HGC</div>
+                <h5 class="mb-0">Crear cuenta</h5>
             </div>
+
+            @if (ViewBag.Mensaje != null)
+            {
+                <div class="login-pill mb-3 text-center">
+                    @ViewBag.Mensaje
+                </div>
+            }
+
+            <form asp-action="Registro" method="post" novalidate>
+                @Html.AntiForgeryToken()
+
+                <div class="mb-2">
+                    <input name="Nombre" value="@(Model?.Nombre ?? "")" class="form-control reg-input" placeholder="Nombre" />
+                    <span asp-validation-for="Nombre" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-2">
+                    <input name="Correo" type="email" value="@(Model?.Correo ?? "")" class="form-control reg-input" placeholder="Email" />
+                    <span asp-validation-for="Correo" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <input name="contrasenaPlano" type="password" class="form-control reg-input" placeholder="Password" />
+                </div>
+
+                <button type="submit" class="btn btn-hgc w-100">Registrarme</button>
+
+                <div class="text-center mt-3">
+                    <a asp-action="Index" class="link-light">Volver al login</a>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

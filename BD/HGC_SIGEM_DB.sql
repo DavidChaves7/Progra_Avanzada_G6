@@ -67,3 +67,34 @@ CREATE TABLE Ordenes (
     FOREIGN KEY (IdProducto) REFERENCES Productos(IdProducto)
 );
 GO
+
+
+
+
+USE HGC_SIGEM;
+GO
+
+DECLARE @correo NVARCHAR(200) = N'admin@hgc.com';
+DECLARE @pwd    NVARCHAR(100) = N'admin123';
+
+INSERT INTO dbo.Usuarios (Nombre, Correo, [ContraseñaHash], Rol, Activo, FechaRegistro)
+VALUES (
+    N'Admin',
+    @correo,
+    CONVERT(VARCHAR(64), HASHBYTES('SHA2_256', CONVERT(VARCHAR(100), @pwd)), 2),
+    'Admin',
+    1,
+    SYSUTCDATETIME()
+);
+
+
+
+USE HGC_SIGEM;
+GO
+
+
+
+INSERT INTO dbo.Widgets (Nombre, Tipo, UrlApi, FrecuenciaRefresco, Activo)
+VALUES
+(N'Clima Alajuela',          N'Chart', N'/api/ext/clima?city=Alajuela',                 60,  1),
+(N'Tipo de cambio USD/CRC',  N'Kpi',   N'/api/ext/divisas?base=USD&symbols=CRC',       300,  1);
