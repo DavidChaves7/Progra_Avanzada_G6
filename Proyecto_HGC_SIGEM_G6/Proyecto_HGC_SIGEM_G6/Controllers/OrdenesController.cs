@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Proyecto_HGC_SIGEM_G6.Context;
-using ModelHelper.Models.Productos;
 using ModelHelper.Models.Ordenes;
+using Proyecto_HGC_SIGEM_G6.Context;
+using System.Text;
 
 namespace Proyecto_HGC_SIGEM_G6.Controllers
 {
@@ -11,80 +11,97 @@ namespace Proyecto_HGC_SIGEM_G6.Controllers
         private readonly DBContext _db;
         public OrdenesController(DBContext db) => _db = db;
 
-        // GET: /Ordenes
+
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var data = await _db.Ordenes
-                .Include(o => o.Producto)
-                .OrderByDescending(o => o.Fecha)
-                .ToListAsync();
-            return View(data);
+            var list = await _db.Ordenes.AsNoTracking()
+                         .OrderBy(w => w.IdOrden).ToListAsync();
+            return View(list);
         }
 
-        // GET: /Ordenes/Crear
-        [HttpGet]
-        public async Task<IActionResult> Crear()
-        {
-            ViewBag.Productos = await _db.Productos
-                .Where(p => p.Activo && p.Cantidad > 0)
-                .OrderBy(p => p.Nombre)
-                .ToListAsync();
-            return View(new Orden { Cantidad = 1 });
-        }
 
-        // POST: /Ordenes/Crear
         [HttpPost]
-        public async Task<IActionResult> Crear(int IdProducto, int Cantidad)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([FromForm] Orden model)
         {
-            var prod = await _db.Productos.FirstOrDefaultAsync(p => p.IdProducto == IdProducto && p.Activo);
-            if (prod is null)
-            {
-                ModelState.AddModelError("", "Producto no encontrado o inactivo.");
-            }
-            else if (Cantidad <= 0 || Cantidad > prod.Cantidad)
-            {
-                ModelState.AddModelError("", $"Cantidad inválida. Disponible: {prod.Cantidad}.");
-            }
+
+            model.Fecha = DateTime.Now;
+            var precio = _db.Productos.FirstOrDefault(p => p.IdProducto == model.IdProducto).Precio;
+            model.Total = model.Cantidad * precio;
+            model.Estado = "Pendiente";
 
             if (!ModelState.IsValid)
             {
-                ViewBag.Productos = await _db.Productos.Where(p => p.Activo && p.Cantidad > 0).OrderBy(p => p.Nombre).ToListAsync();
-                return View(new Orden { IdProducto = IdProducto, Cantidad = Cantidad });
+                var sb = new StringBuilder("No fue posible guardar el Orden.");
+                foreach (var kv in ModelState)
+                    foreach (var err in kv.Value.Errors)
+                        sb.AppendLine($" {kv.Key}: {err.ErrorMessage}");
+                TempData["err"] = sb.ToString();
+
+                var list = await _db.Ordenes.AsNoTracking().OrderBy(w => w.IdOrden).ToListAsync();
+                return View("Index", list);
             }
 
-            var orden = new Orden
-            {
-                IdUsuario = 0, 
-                IdProducto = prod!.IdProducto,
-                Cantidad = Cantidad,
-                Total = prod.Precio * Cantidad,
-                Estado = "Pendiente",
-                Fecha = DateTime.Now
-            };
-
-            // Descontar stock
-            prod.Cantidad -= Cantidad;
-
-            _db.Ordenes.Add(orden);
+            _db.Ordenes.Add(model);
             await _db.SaveChangesAsync();
+            TempData["ok"] = "Orden creada.";
+
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: /Ordenes/Cancelar/5  (restaura stock)
-        [HttpPost]
-        public async Task<IActionResult> Cancelar(int id)
-        {
-            var o = await _db.Ordenes.FirstOrDefaultAsync(x => x.IdOrden == id);
-            if (o is null) return NotFound();
 
-            if (o.Estado != "Cancelada")
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var w = await _db.Ordenes.FirstOrDefaultAsync(x => x.IdOrden == id);
+            if (w == null) return NotFound();
+            return View(w);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit([FromForm] Orden model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var w = await _db.Ordenes.FirstOrDefaultAsync(x => x.IdOrden == model.IdOrden);
+            if (w == null) return NotFound();
+
+            w.Cantidad = model.Cantidad;
+            w.Estado = model.Estado;
+            var precio = _db.Productos.FirstOrDefault(p => p.IdProducto == model.IdProducto).Precio;
+            w.Total = model.Cantidad * precio;
+            w.Fecha = DateTime.Now;
+
+            await _db.SaveChangesAsync();
+            TempData["ok"] = "Orden actualizado.";
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var w = await _db.Ordenes.FirstOrDefaultAsync(x => x.IdOrden == id);
+            if (w != null)
             {
-                var prod = await _db.Productos.FindAsync(o.IdProducto);
-                if (prod != null) prod.Cantidad += o.Cantidad; 
-                o.Estado = "Cancelada";
+                _db.Ordenes.Remove(w);
                 await _db.SaveChangesAsync();
+                TempData["ok"] = "Orden eliminado.";
             }
             return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Test(int id)
+        {
+            var w = await _db.Ordenes.AsNoTracking().FirstOrDefaultAsync(x => x.IdOrden == id);
+            if (w == null) return NotFound();
+            return View(w);
         }
     }
 }

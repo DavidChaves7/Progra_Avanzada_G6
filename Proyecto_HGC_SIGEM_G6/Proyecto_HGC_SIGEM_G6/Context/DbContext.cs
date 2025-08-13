@@ -12,11 +12,8 @@ namespace Proyecto_HGC_SIGEM_G6.Context
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Widget> Widgets { get; set; }
-
         public DbSet<Orden> Ordenes { get; set; }
-
         public DbSet<Producto> Productos { get; set; }
-
         public DbSet<ConfiguracionUsuario> ConfiguracionUsuario { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -62,3 +59,4 @@ namespace Proyecto_HGC_SIGEM_G6.Context
         }
     }
 }
+

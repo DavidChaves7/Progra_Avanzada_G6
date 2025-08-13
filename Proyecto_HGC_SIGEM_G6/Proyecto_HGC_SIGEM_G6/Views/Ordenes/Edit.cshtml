@@ -1,0 +1,46 @@
+﻿@model ModelHelper.Models.Ordenes.Orden
+@{
+    ViewData["Title"] = "Editar orden";
+}
+
+<div class="container mt-3">
+    <div class="card bg-dark text-light border-secondary shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title mb-3">Editar Widget</h4>
+            <form asp-action="Edit" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="IdOrden" />
+                <input type="hidden" asp-for="IdUsuario" />
+                <input type="hidden" asp-for="IdProducto" />
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label asp-for="Cantidad" class="form-label"></label>
+                        <input asp-for="Cantidad" class="form-control bg-secondary border-0 text-light" />
+                        <span asp-validation-for="Cantidad" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Estado" class="form-label"></label>
+                        <select asp-for="Estado" class="form-select bg-secondary border-0 text-light">
+                            <option>Pendiente</option>
+                            <option>Finalizado</option>
+                            <option>Entregado</option>
+                        </select>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-danger">Guardar cambios</button>
+                    <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

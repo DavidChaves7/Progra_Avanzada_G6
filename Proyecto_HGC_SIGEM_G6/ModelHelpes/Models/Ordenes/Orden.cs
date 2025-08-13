@@ -26,8 +26,5 @@ namespace ModelHelper.Models.Ordenes
         public string Estado { get; set; } = "Pendiente"; 
 
         public DateTime Fecha { get; set; } = DateTime.Now;
-
-        [ForeignKey(nameof(IdProducto))]
-        public Producto? Producto { get; set; }
     }
 }

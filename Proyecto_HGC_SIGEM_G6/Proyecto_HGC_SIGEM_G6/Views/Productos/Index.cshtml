@@ -1,38 +1,98 @@
+﻿@model IEnumerable<ModelHelper.Models.Productos.Producto>
 @{
-    ViewData["Title"] = "Iniciar sesión";
-    Layout = "_LayoutClean";
+    ViewData["Title"] = "Producto Settings";
 }
 
-<link rel="stylesheet" href="~/css/Styles/Style-Login.css" />
+<div class="container-fluid">
+    @*  *@
+    @if (TempData["ok"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+            @TempData["ok"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+    }
+    @if (TempData["err"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+            @TempData["err"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+    }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-sm border-0 rounded-3">
+    <div class="row g-3 mt-2">
+        
+        <div class="col-12 col-lg-5">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
                 <div class="card-body">
-                    <h3 class="text-center mb-4">Iniciar sesión</h3>
+                    <h4 class="card-title mb-3">Nuevo Producto</h4>
 
-                    <form method="post">
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Correo electrónico</label>
-                            <input name="correo" type="email" class="form-control" id="correo" required />
-                        </div>
+                    <form asp-action="Create" asp-controller="Productos" method="post" id="formProducto">
+                        @Html.AntiForgeryToken()
 
                         <div class="mb-3">
-                            <label for="contrasena" class="form-label">Contraseña</label>
-                            <input name="contrasena" type="password" class="form-control" id="contrasena" required />
+                            <label class="form-label">Nombre</label>
+                            <input name="Nombre" class="form-control bg-secondary border-0 text-light" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Precio</label>
+                            <input name="Precio" type="number" min="5" 
+                                   class="form-control bg-secondary border-0 text-light" />
                         </div>
 
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Ingresar</button>
-                            <a href="/Login/Registro" class="btn btn-outline-secondary">¿No tienes cuenta? Regístrate</a>
+                        @*  *@
+                        <input type="hidden" name="Activo" value="false" />
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="Activo" name="Activo" value="true" checked />
+                            <label class="form-check-label" for="Activo">Activo</label>
                         </div>
+
+                        <button type="submit" class="btn btn-danger w-100">Guardar</button>
                     </form>
+                </div>
+            </div>
+        </div>
 
-                    @if (ViewBag.Mensaje != null)
-                    {
-                        <div class="alert alert-danger mt-3">@ViewBag.Mensaje</div>
-                    }
+       
+        <div class="col-12 col-lg-7">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Widgets</h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Activo</th>
+                                    <th class="text-center">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var w in Model)
+                                {
+                                    <tr>
+                                        <td class="text-truncate" style="max-width:240px">@w.Nombre</td>
+                                        <td>@w.Precio</td>
+                                        <td>@w.Activo</td>
+                                        <td class="text-center">
+                                            <a asp-action="Edit" asp-route-id="@w.IdProducto" class="btn btn-sm btn-outline-light me-2" title="Editar">✏️</a>
+                                            <form asp-action="Delete" asp-route-id="@w.IdProducto" method="post" class="d-inline">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-sm btn-outline-danger"
+                                                        onclick="return confirm('¿Eliminar producto?');" title="Eliminar">
+                                                    🗑
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @* <small class="text-secondary">TIP: La visibilidad avanzada (Private/Role) se puede agregar luego si decides extender el esquema.</small> *@
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ namespace Proyecto_HGC_SIGEM_G6.Services
         private readonly DBContext _db;
         public RestService(DBContext db) => _db = db;
 
+        #region Login
         public async Task<ApiResult<Usuario>> VerificarCredenciales(string correo, string contrasenaHash)
         {
             var user = await _db.Usuarios.AsNoTracking()
@@ -32,5 +33,7 @@ namespace Proyecto_HGC_SIGEM_G6.Services
 
             return new ApiResult<Usuario> { data = usuario, hasErrors = false };
         }
+
+        #endregion
     }
 }
