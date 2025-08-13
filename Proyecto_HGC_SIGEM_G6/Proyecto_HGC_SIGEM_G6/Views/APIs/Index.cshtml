@@ -1,4 +1,6 @@
 ﻿@model ModelHelper.Models.APIsViewModel
+<link rel="stylesheet" href="~/css/Styles/Style-Login.css" />
+
 
 <h2>Panel de APIs Externas</h2>
 
@@ -50,38 +52,40 @@
 @if (Model.Muebles != null && Model.Muebles.Any())
 {
     var first = Model.Muebles.First();
+
     <div class="card shadow p-3 mb-4">
         <h4>Muebles (demo sin autenticación)</h4>
-        <div style="position:relative; display:inline-block; width:100%; max-width:780px;">
-            <img id="mueble-rotatorio" src="@first.ImageUrl"
-                 alt="Mueble" class="img-fluid rounded w-100"
-                 style="max-height:420px; object-fit:cover; opacity:1; transition:opacity .25s ease;">
+        <div class="ratio ratio-4x3 mx-auto position-relative" style="max-width:520px;">
+            <img id="mueble-rotatorio"
+                 src="@first.ImageUrl"
+                 alt="Mueble"
+                 class="w-100 h-100 object-fit-contain rounded"
+                 style="transition:opacity .25s ease;" />
             <div id="mueble-titulo"
-                 class="px-3 py-2"
-                 style="position:absolute; left:0; right:0; bottom:0;
-                            background:rgba(0,0,0,.55); color:#fff; font-weight:600;">
+                 class="position-absolute bottom-0 start-0 end-0 px-3 py-2 text-white"
+                 style="background:rgba(0,0,0,.55); font-weight:600;">
                 @first.Title
             </div>
         </div>
     </div>
 
     <script>
-        (function(){
-          const items = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Muebles));
-          const img = document.getElementById('mueble-rotatorio');
-          const title = document.getElementById('mueble-titulo');
-          if (!items || items.length === 0) return;
+        (function () {
+            const items = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Muebles));
+            const img = document.getElementById('mueble-rotatorio');
+            const title = document.getElementById('mueble-titulo');
+            if (!items || items.length === 0) return;
 
-          let i = 0, intervaloMs = 8000;
-          setInterval(()=>{
-            i = (i + 1) % items.length;
-            img.style.opacity = 0;
-            setTimeout(()=>{
-              img.src = items[i].ImageUrl;
-              title.textContent = items[i].Title;
-              img.onload = ()=> img.style.opacity = 1;
-            }, 250);
-          }, intervaloMs);
+            let i = 0, intervaloMs = 8000;
+            setInterval(() => {
+                i = (i + 1) % items.length;
+                img.style.opacity = 0;
+                setTimeout(() => {
+                    img.src = items[i].ImageUrl;
+                    title.textContent = items[i].Title;
+                    img.onload = () => img.style.opacity = 1;
+                }, 250);
+            }, intervaloMs);
         })();
     </script>
 }
@@ -89,4 +93,5 @@ else
 {
     <div class="card shadow p-3 mb-4"><em>No hay resultados de muebles.</em></div>
 }
+
 

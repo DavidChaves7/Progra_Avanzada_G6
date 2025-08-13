@@ -53,3 +53,27 @@
         font-size: 1.5rem;
     }
 }
+
+.mueble-frame {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.mueble-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mueble-badge {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+}
+

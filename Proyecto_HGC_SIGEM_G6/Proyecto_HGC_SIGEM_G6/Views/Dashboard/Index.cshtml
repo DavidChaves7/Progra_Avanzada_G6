@@ -1,0 +1,289 @@
+﻿@model ModelHelper.Models.Dashboard.DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container-fluid">
+    <h2 class="mb-3 text-center text-light">Dashboard</h2>
+
+    <!-- ========== FILA 1: KPIs ========== -->
+    <div class="row g-3 mt-2">
+        <div class="col-6 col-md-3">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body text-center">
+                    <div class="fw-semibold">Productos</div>
+                    <div class="fs-3">@Model.TotalProductos</div>
+                    <div class="text-secondary small">Activos: @Model.ProductosActivos</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body text-center">
+                    <div class="fw-semibold">Bajo stock</div>
+                    <div class="fs-3">@Model.ProductosBajoStock</div>
+                    <div class="text-secondary small">(≤ 5 u.)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body text-center">
+                    <div class="fw-semibold">Órdenes</div>
+                    <div class="fs-3">@Model.TotalOrdenes</div>
+                    <div class="text-secondary small">Pendientes: @Model.OrdenesPendientes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body text-center">
+                    <div class="fw-semibold">Ventas hoy</div>
+                    <div class="fs-4">₡ @Model.VentasHoy.ToString("N2")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FILA 2: APIS (CLIMA / DIVISAS) ========== -->
+    <div class="row g-3 mt-2">
+        <div class="col-md-6">
+            <div class="card bg-dark text-light border-secondary shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Clima (Alajuela)</h5>
+                    @if (Model.Clima?.Main != null && Model.Clima?.Weather?.Count > 0)
+                    {
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-dark text-light border-secondary">
+                                <strong>Temp:</strong> @Model.Clima.Main.Temp °C
+                            </li>
+                            <li class="list-group-item bg-dark text-light border-secondary">
+                                <strong>Humedad:</strong> @Model.Clima.Main.Humidity %
+                            </li>
+                            <li class="list-group-item bg-dark text-light border-secondary">
+                                <strong>Condición:</strong> @Model.Clima.Weather[0].Description
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <div class="text-danger">No disponible</div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card bg-dark text-light border-secondary shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Tipo de cambio</h5>
+                    @if (Model.Divisa?.Conversion_rates != null)
+                    {
+                        decimal eur = 0, crc = 0;
+                        Model.Divisa.Conversion_rates.TryGetValue("EUR", out eur);
+                        Model.Divisa.Conversion_rates.TryGetValue("CRC", out crc);
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-dark text-light border-secondary"><strong>USD:</strong> 1</li>
+                            <li class="list-group-item bg-dark text-light border-secondary"><strong>EUR:</strong> @eur</li>
+                            <li class="list-group-item bg-dark text-light border-secondary"><strong>CRC:</strong> @crc</li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <div class="text-danger">No disponible</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FILA 3: LISTADOS ========== -->
+    <div class="row g-3 mt-2">
+        <div class="col-lg-6">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Últimos productos</h5>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped table-hover align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th class="text-end">Precio</th>
+                                    <th class="text-end">Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.UltimosProductos.Any())
+                                {
+                                    @foreach (var p in Model.UltimosProductos)
+                                    {
+                                        <tr>
+                                            <td class="text-truncate" style="max-width:260px">@p.Nombre</td>
+                                            <td class="text-end">₡ @p.Precio.ToString("N2")</td>
+                                            <td class="text-end">@p.Cantidad</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="3" class="text-center text-secondary">Sin datos</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Últimas órdenes</h5>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped table-hover align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Producto</th>
+                                    <th class="text-end">Cant.</th>
+                                    <th class="text-end">Total</th>
+                                    <th>Estado</th>
+                                    <th>Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.UltimasOrdenes.Any())
+                                {
+                                    @foreach (var o in Model.UltimasOrdenes)
+                                    {
+                                        <tr>
+                                            <td>@o.IdOrden</td>
+                                            <td class="text-truncate" style="max-width:220px">
+                                                @(o.Producto?.Nombre ?? ("#" + o.IdProducto))
+                                            </td>
+                                            <td class="text-end">@o.Cantidad</td>
+                                            <td class="text-end">₡ @o.Total.ToString("N2")</td>
+                                            <td>
+                                                @if (o.Estado == "Cancelada")
+                                                {
+                                                    <span class="badge bg-secondary">Cancelada</span>
+                                                }
+                                                else if (o.Estado == "Pendiente")
+                                                {
+
+                                                    <span class="badge bg-warning text-dark">Pendiente</span>
+                                                }
+                                                else
+                                                {
+
+                                                    <span class="badge bg-success">@o.Estado</span>
+                                                }
+                                            </td>
+                                            <td>@o.Fecha.ToString("dd/MM HH:mm")</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="6" class="text-center text-secondary">Sin datos</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FILA 4: TOP PRODUCTOS ========== -->
+    <div class="row g-3 mt-2">
+        <div class="col-12">
+            <div class="card bg-dark text-light border-secondary shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Top productos vendidos</h5>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped table-hover align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th class="text-end">Cantidad</th>
+                                    <th class="text-end">Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.TopProductos.Any())
+                                {
+                                    @foreach (var t in Model.TopProductos)
+                                    {
+                                        <tr>
+                                            <td class="text-truncate" style="max-width:260px">@t.Producto.Nombre</td>
+                                            <td class="text-end">@t.CantidadVendida</td>
+                                            <td class="text-end">₡ @t.Monto.ToString("N2")</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="3" class="text-center text-secondary">Sin datos</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FILA 5: MUEBLES (API) ========== -->
+    @if (Model.Muebles != null && Model.Muebles.Any())
+    {
+        var first = Model.Muebles.First();
+
+        <div class="row g-3 mt-2">
+            <div class="col-12">
+                <div class="card bg-dark text-light border-secondary shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Muebles (demo)</h5>
+
+                        <div class="ratio ratio-4x3 mx-auto position-relative" style="max-width:520px;">
+                            <img id="mueble-rotatorio"
+                                 src="@first.ImageUrl"
+                                 alt="Mueble"
+                                 class="w-100 h-100 object-fit-contain rounded"
+                                 style="transition:opacity .25s ease;" />
+                            <div id="mueble-titulo"
+                                 class="position-absolute bottom-0 start-0 end-0 px-3 py-2 text-white"
+                                 style="background:rgba(0,0,0,.55); font-weight:600;">
+                                @first.Title
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            (function () {
+                const items = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Muebles));
+                const img = document.getElementById('mueble-rotatorio');
+                const title = document.getElementById('mueble-titulo');
+                if (!items || items.length === 0) return;
+
+                let i = 0, intervaloMs = 8000;
+                setInterval(() => {
+                    i = (i + 1) % items.length;
+                    img.style.opacity = 0;
+                    setTimeout(() => {
+                        img.src = items[i].ImageUrl;
+                        title.textContent = items[i].Title;
+                        img.onload = () => img.style.opacity = 1;
+                    }, 250);
+                }, intervaloMs);
+            })();
+        </script>
+    }
+</div>

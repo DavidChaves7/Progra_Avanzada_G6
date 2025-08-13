@@ -45,7 +45,7 @@ namespace Proyecto_HGC_SIGEM_G6.Controllers
             HttpContext.Session.SetString("User", res.data.Correo ?? correo);
             HttpContext.Session.SetString("Rol", res.data.Rol ?? "U");
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Dashboard");
         }
 
         [HttpGet]
